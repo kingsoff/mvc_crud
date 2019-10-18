@@ -1,7 +1,5 @@
-// Model - SQL operations
-
 <?php
-
+// Model - SQL operations
 class Database
 {
     private $pdo;

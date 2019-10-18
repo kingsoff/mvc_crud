@@ -46,7 +46,7 @@ Class Controller
             case ($page === "update_record"):  // page update record
                 if (isset($_GET['id'])) {
                     $id = $_GET['id'];
-                    $record = $this->db->getById('Record', $id);
+                    $record = $this->db->getById('record', $id);
                     require "views/update.php";
                 }
                 break;
@@ -69,7 +69,7 @@ Class Controller
 
     public function updateRecord(Record $record)
     {
-        return $this->db->update('Record', $record->getId(), $record->toArray());
+        return $this->db->update('record', $record->getId(), $record->toArray());
     }
 
 

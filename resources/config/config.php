@@ -1,5 +1,4 @@
-// File connection to database
-<?php
+<?php // File connection to database
 return [
     'db_host' => 'localhost',
     'db_name' => 'crud',
