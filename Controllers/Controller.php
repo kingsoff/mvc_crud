@@ -21,7 +21,7 @@ Class Controller
                 break;
 
 
-            case ($page === "delete_record"):
+            case ($page === "delete_record"): // page show all
                 if (isset($_GET['id'])) {
                     $id = $_GET['id'];
                     $this->db->delete('Record', $id);
@@ -30,7 +30,7 @@ Class Controller
                 break;
 
 
-            case ($page === "create"):
+            case ($page === "create"): // page create new
                 if (isset($_POST['insert_record'])) {
                     $record = new Record();
                     $record->setName($_POST['name']);
@@ -43,7 +43,7 @@ Class Controller
                 require "views/create.php";
                 break;
 
-            case ($page === "update_record"):
+            case ($page === "update_record"):  // page update record
                 if (isset($_GET['id'])) {
                     $id = $_GET['id'];
                     $record = $this->db->getById('Record', $id);
@@ -51,7 +51,7 @@ Class Controller
                 }
                 break;
 
-            case ($page === "do_update_record"):
+            case ($page === "do_update_record"): // send update
                 if (isset($_POST['update_record'])) {
                     $record = new Record($_POST);
                     $update_success_record = $this->updateRecord($record);

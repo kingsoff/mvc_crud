@@ -1,3 +1,5 @@
+// Model - SQL operations
+
 <?php
 
 class Database

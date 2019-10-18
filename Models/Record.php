@@ -1,3 +1,5 @@
+// Record adding model
+
 <?php
 
 class Record
