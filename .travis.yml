@@ -1,3 +1,7 @@
 language: php
 php:
+<<<<<<< HEAD
   - 7.2
+=======
+  - 7.2
+>>>>>>> 9d25cd2bcc8ad1c68b4b356ca98b759453d3d0fa
