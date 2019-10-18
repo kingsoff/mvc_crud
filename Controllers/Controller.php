@@ -81,7 +81,7 @@ Class Controller
     public function success()
     {
         if (isset($_GET['insert_success_record']) && $_GET['insert_success_record']) {
-            echo "<p>WOOHOO! Your record was successfully added! </p>";
+            echo "<p style='color:green'>WOOHOO! Your record was successfully added! </p>";
         } elseif (isset($_GET['insert_success_record']) && !$_GET['insert_success_record']) {
             echo "<p>Something wrong!</p>";
         }
@@ -90,7 +90,7 @@ Class Controller
     public function updateSuccess()
     {
         if (isset($_GET['update_success_record']) && $_GET['update_success_record']) {
-            echo "<p>WOOHOO! Your record was successfully updated! </p>";
+            echo "<p style='color:green'>WOOHOO! Your record was successfully updated! </p>";
         } elseif (isset($_GET['update_success_record']) && !$_GET['update_success_record']) {
             echo "<p>Something wrong!</p>";
         }

@@ -30,6 +30,8 @@ require "header.php";
             </tr>
         <?php endforeach; ?>
     </table>
+
+
     </div>
 </div>
 <?php
