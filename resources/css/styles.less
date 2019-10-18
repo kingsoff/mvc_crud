@@ -1,0 +1,53 @@
+@bg-color: #EEE;
+@color: #000;
+@btn-primary-color: #fff;
+@btn-color: #000;
+@var: 60px;
+@padding: 5px;
+
+body > .container {
+  padding-top: @var;
+  padding-bottom: 30px;
+}
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  background-color: @bg-color;
+  color: @color;
+  margin-bottom: 30px;
+}
+.navbar {
+  background-color: @bg-color;
+  border-bottom: 1px solid @color;
+}
+.form-group {
+  width: 90%;
+}
+.btn {
+  background-color: @btn-primary-color;
+  color: @btn-color;
+
+  &:hover {
+    background-color: @btn-color;
+    color: @bg-color;
+  }
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: @var;
+  background-color: @bg-color;
+}
+table {
+  background-color: @bg-color;
+  border: @padding solid @color;
+}
+td, th {
+  padding: @padding;
+}
+tr.show_record {
+  border-bottom: 2.5px solid @color;
+}
