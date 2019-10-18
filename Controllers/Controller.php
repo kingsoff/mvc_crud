@@ -16,7 +16,7 @@ Class Controller
 
         switch ($page) {
             case ($page === "show"):
-                $this->db->readAll('Record');
+                $this->db->readAll('record');
                 require "views/show.php";
                 break;
 
@@ -24,7 +24,7 @@ Class Controller
             case ($page === "delete_record"): // page show all
                 if (isset($_GET['id'])) {
                     $id = $_GET['id'];
-                    $this->db->delete('Record', $id);
+                    $this->db->delete('record', $id);
                 }
                 require "views/show.php";
                 break;
@@ -75,7 +75,7 @@ Class Controller
 
     public function createRecord(Record $record)
     {
-        return $this->db->create('Record', $record->toArray());
+        return $this->db->create('record', $record->toArray());
     }
 
     public function success()

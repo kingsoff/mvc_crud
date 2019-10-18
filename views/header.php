@@ -55,7 +55,7 @@
 <body>
 <!-- Fixed navbar -->
 <nav class="navbar navbar-dark bg-primary justify-content-center">
-    <a class="navbar-brand" href="#">Crud system for Webince</a>
+    <a class="navbar-brand" href="../index.php">Crud system for Webince</a>
     <a class="navbar-brand" href="../index.php?page=show">View</a>
     <a class="navbar-brand" href="../index.php?page=create" id="LLink">Add</a>
 </nav>
