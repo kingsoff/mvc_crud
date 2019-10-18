@@ -3,8 +3,8 @@ require "header.php";
 ?>
 <div class="row">
     <div class="col-lg-12 col-sm-12">
-      <?php $this->success() ?> // Show success message
-      <?php $this->updateSuccess() ?> // Show success message
+      <?php $this->success()  // Show success message ?>
+        <?php $this->updateSuccess()  // Show success message ?>
         <h2>People list</h2>
     <table class="table">
         <tr>

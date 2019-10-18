@@ -1,5 +1,5 @@
 </div>
-// Footer views
+<!-- Footer views-->
 <footer class="footer">
     <div class="container">
         <p class="text-muted">&copy CRUD by Arsenii Zima:) 2019</p>

@@ -1,4 +1,4 @@
-// Update views
+<!-- Update views-->
 <?php
 require "header.php";
 ?>
