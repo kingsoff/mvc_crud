@@ -8,15 +8,27 @@
     <meta name="description" content="Crud system">
     <meta name="author" content="Arsenii Zima">
     <title>CRUD</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    <link rel="stylesheet" type="text/css" href="/resources/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--<<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>-->
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet/less" type="text/css" href="/resources/css/styles.less">
-    <script src="/resources/js/less.js" type="text/javascript"></script>
+    <script src="/resources/js/less.js" type="text/javascript"></script>-->
 
     <!--Add for pop-up window-->
     <link href='http://fonts.googleapis.com/css?family=Varela+Round|Open+Sans:400,300,600' rel='stylesheet'
           type='text/css'>
-    <link rel="stylesheet" type="text/css" href="/resources/css/style.css">
+
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script>
         $(document).ready(function () {
@@ -42,16 +54,14 @@
 </head>
 <body>
 <!-- Fixed navbar -->
-<nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="#">Crud system for Webince</a>
-        </div>
-        <div id="navbar" class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
-                <li><a href="../index.php?page=show">Просмотр</a></li>
-                <li><a href="../index.php?page=create" id="LLink">Создание</a></li>
-            </ul>
+<nav class="navbar navbar-dark bg-primary justify-content-center">
+    <a class="navbar-brand" href="#">Crud system for Webince</a>
+    <a class="navbar-brand" href="../index.php?page=show">View</a>
+    <a class="navbar-brand" href="../index.php?page=create" id="LLink">Add</a>
+</nav>
+
+
+
             <!--Pop-up window-->
             <div class="overlay" style="display: none;">
                 <div class="login-wrapper">
@@ -81,8 +91,6 @@
                 </div>
             </div>
             <!--End pop-up-->
-        </div>
-    </div>
-</nav>
+
 <!-- Page content -->
 <div class="container">
