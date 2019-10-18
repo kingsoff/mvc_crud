@@ -1,3 +1,4 @@
+// Header Views
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,8 +25,8 @@
                 <li><a href="../index.php?page=show">Просмотр</a></li>
                 <li><a href="../index.php?page=create">Создание</a></li>
             </ul>
-        </div><!--/.nav-collapse -->
+        </div>
     </div>
 </nav>
-<!-- Begin page content -->
+<!-- Page content -->
 <div class="container">

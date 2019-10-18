@@ -1,7 +1,7 @@
 <?php
 require "header.php";
 ?>
-<form action="/index.php?page=create" method="post">
+<form action="/index.php?page=create" method="post"> //  form handler
     <div class="form-group">
         <label for="name">Name: </label>
         <input type="text" name="name" class="form-control" id="name" placeholder="Name" required>

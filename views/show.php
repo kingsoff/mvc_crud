@@ -3,9 +3,9 @@ require "header.php";
 ?>
 <div class="row">
     <div class="col-lg-12 col-sm-12">
-      <?php $this->success() ?>
-      <?php $this->updateSuccess() ?>
-    <h2>People list</h2>
+      <?php $this->success() ?> // Show success message
+      <?php $this->updateSuccess() ?> // Show success message
+        <h2>People list</h2>
     <table class="table">
         <tr>
             <th>Name</th>
@@ -15,7 +15,7 @@ require "header.php";
             <th>Delete</th>
         </tr>
         <?php
-        foreach ($this->db->readAll('Record') as $value):
+        foreach ($this->db->readAll('Record') as $value): //Function show all record from db
         ?>
             <tr>
                 <td><?php echo $value['name']; ?></td>

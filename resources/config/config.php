@@ -1,3 +1,4 @@
+// File connection to database
 <?php
 return [
     'db_host' => 'localhost',
